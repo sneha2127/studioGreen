@@ -103,19 +103,19 @@ svg{
     box-sizing: border-box;
     margin-top: 70px;
     transform: translate(-50%,-50%);
-    background-image: url('images/Architecture(2).jpg');
+    background-image: url('images/Architecture (2).jpg');
     background-size: 100% 100%;
     box-shadow: 1px 2px 10px white;
     animation: slider 20s infinite linear;
 }
 
 @keyframes slider{
-    0%{  background-image: url('images/Architecture(2).jpg'); }
-    15%{  background-image: url('images/Architecture(3).jpg'); }
-    30%{  background-image: url('images/interior design(3).jpg'); }  
-    45%{  background-image: url('images/interior design(6).jpg'); }   
+    0%{  background-image: url('images/Architecture (2).jpg'); }
+    15%{  background-image: url('images/Architecture (3).jpg'); }
+    30%{  background-image: url('images/interior design (3).jpg'); }  
+    45%{  background-image: url('images/interior design (6).jpg'); }   
     60%{  background-image: url('images/office.jpg'); }  
-    75%{  background-image: url('images/Lanscape designing(3).jpg'); }  
-    90%{  background-image: url('images/Lanscape designing(5).jpg'); }
+    75%{  background-image: url('images/Lanscape designing (3).jpg'); }  
+    90%{  background-image: url('images/Lanscape designing (5).jpg'); }
 
 }
