@@ -106,11 +106,12 @@ svg{
     background-image: url('images/Architecture (2).jpg');
     background-size: 100% 100%;
     box-shadow: 1px 2px 10px white;
+    -webkit-animation: slider 15s infinite linear;
     animation: slider 15s infinite linear;
     animation-timing-function:  ease;
 }
 
-@keyframes slider{
+@-webkit-keyframes slider{
     0%{  background-image: url('images/Architecture (2).jpg'); }
     15%{  background-image: url('images/Architecture (3).jpg'); }
     30%{  background-image: url('images/interior design (3).jpg'); }  
