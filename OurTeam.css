@@ -183,10 +183,14 @@ img{
 
 
 }
+.card-grid:hover .card-background{
+    opacity:0.4;
+}
 .card:hover .card-background{
     transform: scale(1.25) translateZ(0);
     transition-property: all;
     transition-duration: 0.5s;
+    opacity:1;
 }
 .card:hover .hidden{
     left: 0;
@@ -196,9 +200,7 @@ img{
     transition: all 1s;
 }
  
-.card-grid:hover > .card:not(:hover) .card-background{
-    filter: brightness(1) saturate(0) contrast(1) blur(1.25);
-}
+
 
 .card-content{
     padding: 14.37rem 1.25rem;
