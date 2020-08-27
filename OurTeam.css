@@ -177,6 +177,8 @@ img{
 }
 .card:hover .card-background{
     transform: scale(1.25) translateZ(0);
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 .card:hover .hidden{
     left: 0;
