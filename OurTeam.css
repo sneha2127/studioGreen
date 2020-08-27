@@ -160,6 +160,7 @@ img{
 .card-background{
     background-size: cover ;
     background-position: center;
+    transform: skewX(10deg);
     border-radius: 0.9375rem;
     width: 250px;
     height: 400px;
