@@ -120,7 +120,7 @@ img{
     align-items: flex-start;
     display: flex;
     justify-content: center;
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.5rem;
 }
 
 .card-grid{
@@ -198,7 +198,7 @@ img{
     padding: 14.37rem 1.25rem;
     position: absolute;
     top: 0;
-    padding-top:300px ;
+    padding-top:270px ;
     transition: all 1s;
     
 
