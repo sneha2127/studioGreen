@@ -1,0 +1,222 @@
+
+
+body{
+   
+    background-color: rgba(35, 40, 44, 0.85);
+    font-family: sans-serif;
+    margin: 0;
+    overflow: visible;
+    height: 100%;
+    
+}
+img{
+    opacity: 0.5;
+    background-color: white;
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+}
+#menu{
+    height: 30px;
+    width: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer; 
+}
+.bar{
+    height: 2px;
+    width: 100%;
+    background-color: #fdfdfd;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+.nav li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav li{
+    list-style: none;
+    padding: 10px 0;
+}
+.nav li:hover{
+    font-weight: bold;
+}
+.nav{
+    padding:0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+
+.menu-bg, #menu-bar{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-bg{
+    z-index: 3;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle,rgb(5, 5, 5),rgb(0, 0, 0));
+    opacity: 0.5;
+    margin: 30px 0 40px 40px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+#menu-bar{ z-index: 4;}
+.change-bg{
+    width: 550px;
+    height:540px ;
+    transform: translate(-60%,-30%);
+}
+.change .bar{
+    background-color: rgb(255, 255, 255);
+}
+.change #bar1{transform: translateY(6px) rotate(-45deg);}
+.change #bar2{ opacity: 0;}
+.change #bar3{transform:  rotate(45deg);}
+.change{ display: block;}
+
+.heading{
+    font-size: 1.7rem;
+    color: rgb(255, 253, 253);
+    left: 35%;
+    top: 10%;
+    text-decoration: underline;
+    line-height: 1.5rem;
+    letter-spacing: 0.5rem;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    box-sizing: border-box;
+    text-shadow: 2px 3px 15px 5px rgba(255, 255, 255, 0.644);
+}
+
+.strip{
+    position: absolute;
+    height: 100%;
+    background:#fff;
+    width: 0.09rem;
+    opacity: 0;
+}
+
+.one{
+    left: 25%;
+}
+.two{
+    left: 50%;
+}
+.three{
+    left: 75%;
+}
+.container{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1.5rem;
+}
+
+.card-grid{
+    display: grid;
+    grid-column-gap: 1.5rem;/*From here you can adjust the gap between cards */
+    max-width: 75rem;/* from here you can adjust the size of the grid*/
+    width: 100%;
+    padding-left: 50px;
+
+
+}
+
+@media(min-width: 50rem){
+    .card-grid{
+        grid-template-columns: repeat(4/*No.of profiles you want to give*/,1fr);
+    }
+}
+.hidden{
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    padding: 10px;
+    color: white;
+    position: relative;
+    left: -30px;
+}
+
+.card{
+    position: relative;
+
+}
+
+.card::before{
+    content: '';
+    display: block;
+    padding-bottom: 110%;
+}
+.card-background{
+    background-size: cover ;
+    background-position: center;
+    border-radius: 0.9375rem;
+    width: 250px;
+    height: 400px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition: filter .2s linear,transform .2s linear;
+    box-shadow: -6px 2px 5px rgba(255, 255, 255, 0.267),inset -6px 2px 5px rgba(0, 0, 0, 0.267);
+    
+
+
+}
+.card:hover .card-background{
+    transform: scale(1.25) translateZ(0);
+}
+.card:hover .hidden{
+    left: 0;
+    opacity: 1;
+    transition: all 0.4s ease-out 0.6s;
+    font-size: 13px;
+}
+ 
+.card-grid:hover > .card:not(:hover) .card-background{
+    filter: brightness(1) saturate(0) contrast(1) blur(1.25);
+}
+
+.card-content{
+    padding: 14.37rem 1.25rem;
+    position: absolute;
+    top: 0;
+    padding-top:300px ;
+    
+
+
+}
+
+.card-description{
+    color: rgba(255, 251, 0, 0.801);
+    font-size: .9rem;
+    text-transform: uppercase;
+
+}
+
+.card-heading{
+    color: rgba(255, 255, 255, .9);
+    font-size: 1.5rem;
+    text-shadow: 0.13rem 0.13rem 1.2rem rgba(0,0,0,.2);
+}
+
+p{
+    margin-top: -1.875rem;
+    background: rgba(0,0,0,.1);
+    background-size: 300px 20px;
+}
+h3{
+    background: rgba(0,0,0,.1);
+    background-size: 300px 20px;
+}
