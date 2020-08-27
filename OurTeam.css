@@ -79,9 +79,9 @@ img{
 .change .bar{
     background-color: rgb(255, 255, 255);
 }
-.change #bar1{transform: translateY(6px) rotate(-45deg);}
-.change #bar2{ opacity: 0;}
-.change #bar3{transform:  rotate(45deg);}
+.change #bar1{transform: translateY(6px) rotate(-45deg); transition: all 1s;}
+.change #bar2{ opacity: 0;transition: all 1s;}
+.change #bar3{transform:  rotate(45deg);transition: all 1s;}
 .change{ display: block;}
 
 .heading{
@@ -145,11 +145,12 @@ img{
     color: white;
     position: relative;
     left: -30px;
+    transition: all 0.5s;
 }
 
 .card{
     position: relative;
-
+    transition: all 0.5s;
 }
 
 .card::before{
@@ -161,6 +162,7 @@ img{
     background-size: cover ;
     background-position: center;
     transform: skewX(10deg);
+    transition: all 1s;
     border-radius: 0.9375rem;
     width: 250px;
     height: 400px;
@@ -185,6 +187,7 @@ img{
     opacity: 1;
     transition: all 0.4s ease-out 0.6s;
     font-size: 13px;
+    transition: all 1s;
 }
  
 .card-grid:hover > .card:not(:hover) .card-background{
@@ -196,6 +199,7 @@ img{
     position: absolute;
     top: 0;
     padding-top:300px ;
+    transition: all 1s;
     
 
 
@@ -205,6 +209,7 @@ img{
     color: rgba(255, 251, 0, 0.801);
     font-size: .9rem;
     text-transform: uppercase;
+    transition: all 1s;
 
 }
 
@@ -212,6 +217,7 @@ img{
     color: rgba(255, 255, 255, .9);
     font-size: 1.5rem;
     text-shadow: 0.13rem 0.13rem 1.2rem rgba(0,0,0,.2);
+    transition: all 1s;
 }
 
 p{
