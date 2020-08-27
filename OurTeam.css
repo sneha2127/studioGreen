@@ -152,11 +152,11 @@ img{
     position: relative;
     transition: all 0.5s;
 }
-@media(min-width: 50rem){
-    .card-grid{
-        grid-template-columns: repeat(4/*No.of profiles you want to give*/,1fr);
+@media screen and (max-width:700px){
+    .card{
+        padding-top: 130px;
     }
-    
+
 }
 
 .card::before{
